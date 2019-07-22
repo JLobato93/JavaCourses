@@ -6,10 +6,6 @@ public class MazeRunner {
         int movesMade = 0;
         intro(myMap);
         while (!myMap.didIWin()) {
-            System.out.println("Right " + myMap.canIMoveRight());
-            System.out.println("Left " + myMap.canIMoveLeft());
-            System.out.println("Up " + myMap.canIMoveUp());
-            System.out.println("Down " + myMap.canIMoveDown());
             userMove(myMap);
             movesMessages(++movesMade);
             if (movesMade == 100) {
